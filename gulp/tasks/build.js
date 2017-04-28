@@ -10,9 +10,6 @@ gulp.task('build', done => {
 			'lint'
 		],
 		[
-			'build-templates'
-		],
-		[
 			'build-scripts',
 			'build-styles',
 			'copy-resources'
@@ -25,9 +22,6 @@ gulp.task('build-min', done => {
 		[
 			'clean',
 			'lint'
-		],
-		[
-			'build-templates'
 		],
 		[
 			'build-scripts-min',

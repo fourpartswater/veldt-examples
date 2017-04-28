@@ -21,7 +21,7 @@ imports:
 - name: github.com/unchartedsoftware/plog
   version: 34d2bbd3c0a9458feb0752af2b578a23eb8ddc4f
 - name: github.com/unchartedsoftware/veldt
-  version: 61e0ffd9b4cdf1a8136188c6ed32dcbea92a1d13
+  version: b31b6d51a34cb30479e73792236546db2927cd7b
   subpackages:
   - binning
   - generation/elastic
@@ -35,7 +35,7 @@ imports:
   - util/promise
   - util/queue
 - name: github.com/unchartedsoftware/veldt-api
-  version: 8ee9bb21845cf49bc1fe33651f7b5cc0fd02d0d5
+  version: 5db3fba4ebf364c2e601f55aa03eb84663ecb50a
   subpackages:
   - http
   - middleware
