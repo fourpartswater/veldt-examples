@@ -1,0 +1,17 @@
+package: github.com/unchartedsoftware/veldt-examples
+import:
+- package: github.com/unchartedsoftware/plog
+- package: github.com/unchartedsoftware/veldt
+  subpackages:
+  - generation/elastic
+  - generation/rest
+  - store/redis
+- package: github.com/unchartedsoftware/veldt-api
+  subpackages:
+  - http
+  - middleware
+  - ws
+- package: github.com/zenazn/goji
+  subpackages:
+  - graceful
+  - web
