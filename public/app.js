@@ -52,21 +52,6 @@ function macroLayer(requestor, pipeline, uri, args) {
 	return layer;
 }
 
-function wordcloudLayer(requestor, pipeline, uri, args) {
-	const layer = new veldt.Layer.TopTermCount();
-	layer.setPipeline(pipeline);
-	layer.setURI(uri);
-	layer.setTermsCount(args.count);
-	layer.setTermsField(args.field);
-	layer.setXField(args.xField);
-	layer.setYField(args.yField);
-	layer.setBounds(args.left, args.right, args.bottom, args.top);
-	layer.setRequestor(requestor);
-	const renderer = new veldt.Renderer.HTML.WordCloud();
-	layer.setRenderer(renderer);
-	return layer;
-}
-
 window.startApp = function() {
 
 	const requestor = new veldt.Requestor('tile', err => {
@@ -107,16 +92,6 @@ window.startApp = function() {
 			resolution: 256,
 			lod: 4
 		});
-		// const wordcloud = wordcloudLayer(requestor, 'elastic', 'trump_twitter', {
-		// 	xField: 'pixel.x',
-		// 	yField: 'pixel.y',
-		// 	left: 0,
-		// 	right: Math.pow(2, 32),
-		// 	bottom: 0,
-		// 	top: Math.pow(2, 32),
-		// 	count: 20,
-		// 	field: 'text'
-		// });
 		map.add(carto);
 		map.add(macro);
 		//map.add(micro);
