@@ -69,7 +69,7 @@ function wordcloudLayer(requestor, pipeline, uri, args) {
 
 window.startApp = function() {
 
-	const requestor = new veldt.TileRequestor('tile', err => {
+	const requestor = new veldt.Requestor('tile', err => {
 		// check error
 		if (err) {
 			console.error(err);

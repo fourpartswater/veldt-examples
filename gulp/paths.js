@@ -18,8 +18,8 @@ module.exports = {
 	],
 	resources: [
 		`${PUBLIC}/index.html`,
-		'./favicons/*',
-		'./images/*'
+		`${PUBLIC}/favicons/*`,
+		`${PUBLIC}/images/*`
 	],
 	go: [
 		'./main.go',
