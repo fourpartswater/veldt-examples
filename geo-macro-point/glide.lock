@@ -1,0 +1,66 @@
+hash: 158ddf210632acde2823a66c2c6178684d9e6878536c27fc452a7da7ec2524b8
+updated: 2017-05-02T20:33:56.950027379-04:00
+imports:
+- name: github.com/davecgh/go-spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+  subpackages:
+  - spew
+- name: github.com/garyburd/redigo
+  version: ac91d6ff49bd0d278a90201de77a4f8ad9628e25
+  subpackages:
+  - internal
+  - redis
+- name: github.com/gorilla/websocket
+  version: 3ab3a8b8831546bd18fd182c20687ca853b2bb13
+- name: github.com/mattn/go-colorable
+  version: ded68f7a9561c023e790de24279db7ebf473ea80
+- name: github.com/mattn/go-isatty
+  version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
+- name: github.com/mgutz/ansi
+  version: 9520e82c474b0a04dd04f8a40959027271bab992
+- name: github.com/unchartedsoftware/plog
+  version: 34d2bbd3c0a9458feb0752af2b578a23eb8ddc4f
+- name: github.com/unchartedsoftware/veldt
+  version: b31b6d51a34cb30479e73792236546db2927cd7b
+  subpackages:
+  - binning
+  - generation/elastic
+  - generation/rest
+  - geometry
+  - query
+  - store/redis
+  - tile
+  - util/color
+  - util/json
+  - util/promise
+  - util/queue
+- name: github.com/unchartedsoftware/veldt-api
+  version: 5db3fba4ebf364c2e601f55aa03eb84663ecb50a
+  subpackages:
+  - http
+  - middleware
+  - util
+  - ws
+- name: github.com/vova616/xxhash
+  version: f0a9a8b74d487f9563a527daf3bd6b4fbd3f5d00
+- name: github.com/zenazn/goji
+  version: 4d7077956293261309684d3cf1af673f773c6819
+  subpackages:
+  - graceful
+  - graceful/listener
+  - web
+- name: golang.org/x/net
+  version: da118f7b8e5954f39d0d2130ab35d4bf0e3cb344
+  subpackages:
+  - context
+  - context/ctxhttp
+- name: golang.org/x/sys
+  version: 9ccfe848b9db8435a24c424abbc07a921adf1df5
+  subpackages:
+  - unix
+- name: gopkg.in/olivere/elastic.v3
+  version: eb47340e05b08cae24208569de7240fecde96bd2
+  subpackages:
+  - backoff
+  - uritemplates
+testImports: []
