@@ -17,12 +17,18 @@ make install
 
 Build the application:
 
-```
+```bash
 make build
 ```
 
-Run the application
+Start redis:
 
+```bash
+redis-server /path/to/redis.conf
 ```
+
+Run the server:
+
+```bash
 make run
 ```
