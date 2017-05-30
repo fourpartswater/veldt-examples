@@ -27,7 +27,6 @@ function macroLayer(requestor, pipeline, uri, args) {
     layer.setBounds(args.left, args.right, args.bottom, args.top);
     layer.setRequestor(requestor);
     const renderer = new veldt.Renderer.WebGL.Macro({
-        maxVertices: args.resolution * args.resolution,
         radius: args.radius,
         color: args.color
     });
