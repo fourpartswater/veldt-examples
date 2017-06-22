@@ -18,7 +18,7 @@ import (
 const (
     publicDir = "./dist"
     port      = "8080"
-    esHost    = "http://10.64.16.120"
+    esHost    = "http://localhost"
     esPort    = "9200"
     redisHost = "localhost"
     redisPort = "6379"

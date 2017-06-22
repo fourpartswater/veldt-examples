@@ -1,4 +1,4 @@
-package: github.com/unchartedsoftware/veldt-examples
+package: github.com/unchartedsoftware/veldt-examples/geo-macro-point
 import:
 - package: github.com/unchartedsoftware/plog
 - package: github.com/unchartedsoftware/veldt

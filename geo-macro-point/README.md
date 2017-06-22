@@ -4,6 +4,7 @@
 
 - [Go](https://golang.org/) version 1.6+ with the `GOPATH` environment variable specified and `$GOPATH/bin` in your `PATH`.
 - [NodeJS](http://nodejs.org/) version 6.0+ JavaScript runtime.
+- [Docker](https://www.docker.com/)
 
 ## Installation
 
@@ -15,19 +16,25 @@ make install
 
 ## Usage
 
-Build the application:
+Pull the docker image containing the redis and elasticsearch instances:
 
 ```bash
-make build
+docker pull docker.uncharted.software/veldt_example:0.1
 ```
 
-Start redis:
+Run the docker container:
 
 ```bash
-redis-server /path/to/redis.conf
+docker run \
+    --user elasticsearch \
+    --rm \
+    --name veldt_example \
+    -p 9200:9200 \
+    -p 6379:6379 \
+    docker.uncharted.software/veldt_example:0.1
 ```
 
-Run the server:
+Build the application and run the server:
 
 ```bash
 make run

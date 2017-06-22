@@ -4,6 +4,12 @@ import veldt from 'veldt';
 import 'veldt/build/veldt.css';
 import '../assets/styles/main.css';
 
+// WebSocket endpoint for initiating tiling request
+const WS_ENDPOINT = 'ws/tile';
+
+// HTTP endpoint for pulling the finished tile.
+const HTTP_ENDPOINT = 'tile';
+
 function cartoDBLayer(requestor, pipeline, uri, args) {
     const layer = new veldt.Layer.Rest();
     layer.setPipeline(pipeline);
@@ -34,21 +40,28 @@ function macroLayer(requestor, pipeline, uri, args) {
     return layer;
 }
 
-const requestor = new veldt.Requestor('tile', err => {
+// Open WebSocket connection for requesting tiles.
+const requestor = new veldt.Requestor(WS_ENDPOINT, HTTP_ENDPOINT, err => {
     if (err) {
         console.error(err);
         return;
     }
+    // Create map
     const map = new veldt.Map('#map', {
-        zoom: 3,
-        dirtyChecking: false
+        zoom: 5,
+        center: {
+            x: 0.23,
+            y: 0.62
+        }
     });
+    // Create CARTO base layer
     const carto = cartoDBLayer(requestor, 'rest', 'dark_nolabels', {
         scheme: 'http',
         endpoint: 'a.basemaps.cartocdn.com',
         ext: 'png'
     });
-    const macro = macroLayer(requestor, 'elastic', 'trump_twitter', {
+    // Create macro point layer
+    const macro = macroLayer(requestor, 'elastic', 'veldt_example', {
         xField: 'pixel.x',
         yField: 'pixel.y',
         left: 0,
