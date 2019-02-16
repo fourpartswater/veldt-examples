@@ -9,8 +9,9 @@
 ## Examples
 
  - [geo-macro-point](./geo-macro-point) - renders binned point-based layer over a texture-based CARTO basemap.
-
-    <img width="600" align="center" src="/geo-macro-point/screenshot.png" alt="screenshot" />
+<p align="center">
+    <img width="600" src="/geo-macro-point/screenshot.png" alt="screenshot" />
+</p>
 
 ## Running Examples
 

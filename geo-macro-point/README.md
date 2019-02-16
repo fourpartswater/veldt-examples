@@ -1,7 +1,7 @@
 # Veldt Geographic Basemap and Macro Point Example
-
-<img width="600" align="center" src="/geo-macro-point/screenshot.png" alt="screenshot" />
-
+<p align="center">
+    <img width="600" src="/geo-macro-point/screenshot.png" alt="screenshot" />
+</p>
 ## Dependencies
 
 - [Go](https://golang.org/) version 1.6+ with the `GOPATH` environment variable specified and `$GOPATH/bin` in your `PATH`.
