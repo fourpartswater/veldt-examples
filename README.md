@@ -10,7 +10,7 @@
 
  - [geo-macro-point](./geo-macro-point) - renders binned point-based layer over a texture-based CARTO basemap.
 
-    <img width="600" align="middle" src="https://rawgit.com/unchartedsoftware/veldt-examples/master/geo-macro-point/screenshot.png" alt="screenshot" />
+    <img width="600" align="middle" src="/geo-macro-point/screenshot.png" alt="screenshot" />
 
 ## Running Examples
 

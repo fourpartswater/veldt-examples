@@ -1,6 +1,6 @@
 # Veldt Geographic Basemap and Macro Point Example
 
-<img width="600" align="middle" src="https://rawgit.com/unchartedsoftware/veldt-examples/master/geo-macro-point/screenshot.png" alt="screenshot" />
+<img width="600" align="middle" src="/screenshot.png" alt="screenshot" />
 
 ## Dependencies
 
